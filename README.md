@@ -283,3 +283,9 @@ const styles = StyleSheet.create({
 | stackOffsetY      | Number   | Vertical offset between cards in stack                      | 0            |
 | cardRemoved       | Function | A callback passing the card reference that just got removed |              |
 | onClickHandler    | Function | A callback clicking the card                                 | alert('tap') |
+
+### Methods
+| Method Name       | Description                                                 |
+|-------------------|-------------------------------------------------------------|
+| forceRightSwipe   | Called handleMaybe method animation                         |
+| forceLeftSwipe    | Called handleYup method animation                           |
