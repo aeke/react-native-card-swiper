@@ -283,20 +283,3 @@ const styles = StyleSheet.create({
 | stackOffsetY      | Number   | Vertical offset between cards in stack                      | 0            |
 | cardRemoved       | Function | A callback passing the card reference that just got removed |              |
 | onClickHandler    | Function | A callback clicking the card                                 | alert('tap') |
-
-
-
-
-*required
-
-### Todo (PRs welcome!)
-- [ ] Show next card underneath current card
-- [ ] Shadow when card is being dragged
-- [ ] Example with backend
-- [ ] Example with polaroids
-- [ ] Submit to repos
-- [x] renderYup
-- [x] renderNope
-- [ ] Testing
-- [ ] Add more args to `cardRemoved`?
-- [ ] `class extends` all components
