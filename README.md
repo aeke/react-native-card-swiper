@@ -209,7 +209,7 @@ export default class App extends React.Component {
         renderNoMoreCards={() => <NoMoreCards />}
         showYup={true}
         showNope={true}
-
+        ref={r => this.swiper = r}
         handleYup={this.handleYup}
         handleNope={this.handleNope}
         cardRemoved={this.cardRemoved.bind(this)}
@@ -243,6 +243,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   }
 })
+```
+
+#### forceLeftSwipe
+```
+<TouchableOpacity onPress={() => this.swiper.swiper.forceLeftSwipe()} />
+```
+
+
+#### forceRightSwipe
+```
+<TouchableOpacity onPress={() => this.swiper.swiper.forceRightSwipe()} />
 ```
 
 ### Props
@@ -287,5 +298,5 @@ const styles = StyleSheet.create({
 ### Methods
 | Method Name       | Description                                                 |
 |-------------------|-------------------------------------------------------------|
-| forceRightSwipe   | Called handleMaybe method animation                         |
-| forceLeftSwipe    | Called handleYup method animation                           |
+| forceRightSwipe   | Called swipe right animation                                |
+| forceLeftSwipe    | Called swipe left animation                                 |
